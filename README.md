@@ -81,19 +81,6 @@ cd PenguSafe-main
 sh tools/install-dev.sh
 ```
 
-Review the downloaded source before executing the installer. For a reproducible
-install, use a published release tag or commit instead of the moving `main`
-branch. Example **after the maintainer creates the `v0.2.0` tag**:
-
-```sh
-mkdir -p /root/pengusafe-0.2.0
-cd /root/pengusafe-0.2.0
-fetch -o PenguSafe-v0.2.0.tar.gz https://github.com/Borderlane-HA/PenguSafe/archive/refs/tags/v0.2.0.tar.gz
-tar -xzf PenguSafe-v0.2.0.tar.gz
-cd PenguSafe-0.2.0
-sh tools/install-dev.sh
-```
-
 ### Install from the full ZIP
 
 Copy the extracted `PenguSafe` folder to `/root/PenguSafe` with SCP/WinSCP, then:
@@ -171,6 +158,7 @@ Confirm or roll back any active Safe Session first. Download a fresh release
 into a separate directory using either installation method, then run:
 
 ```sh
+cd /root/pengusafe-src/PenguSafe-main
 sh tools/install-dev.sh
 ```
 
@@ -184,7 +172,7 @@ First **confirm or roll back the active Safe Session**. Run the uninstaller
 from your retained source directory:
 
 ```sh
-cd /root/PenguSafe
+cd /root/pengusafe-src/PenguSafe-main
 sh tools/uninstall-dev.sh
 ```
 
