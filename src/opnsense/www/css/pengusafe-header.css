@@ -1,0 +1,23 @@
+#pengusafe-header .ps-global-badge {
+    display: inline-flex; align-items: center; gap: 5px; padding: 6px 11px;
+    margin: 10px 8px; border: 1px solid #86919c; border-radius: 18px;
+    font-size: 12px; font-weight: 600; line-height: 20px;
+    color: #273440; background: #eef2f5; white-space: nowrap;
+    font-variant-numeric: tabular-nums; text-decoration: none;
+}
+#pengusafe-header .ps-global-badge[data-state="armed"] { color: #623700; background: #fff0d2; border-color: #d58b17; }
+#pengusafe-header .ps-global-badge[data-state="danger"] { color: #8c1723; background: #ffe1e5; border-color: #c32c40; }
+#pengusafe-header .ps-global-badge[data-state="unknown"] { color: #623700; background: #fff0d2; border-style: dashed; }
+#pengusafe-header .ps-global-badge:hover { filter: brightness(.95); }
+#pengusafe-header .ps-global-badge:focus-visible { outline: 2px solid #ed5100; outline-offset: 2px; }
+@media (min-width: 768px) and (max-width: 1150px) {
+    #pengusafe-header .ps-global-name { display: none; }
+}
+/* The mobile navbar collapses; keep the indicator reachable outside its box. */
+@media (max-width: 767px) {
+    header.page-head .navbar-collapse:has(#pengusafe-header) { display: block !important; height: 0 !important; padding: 0; border: 0; overflow: visible; }
+    header.page-head .navbar-collapse:has(#pengusafe-header) > .navbar-right > li:not(#pengusafe-header) { display: none; }
+    #pengusafe-header { position: fixed; top: 61px; right: 8px; z-index: 1030; }
+    #pengusafe-header .ps-global-badge { margin: 0; box-shadow: 0 2px 8px #0002; }
+    #pengusafe-header .ps-global-name { display: none; }
+}

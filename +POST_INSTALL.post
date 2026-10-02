@@ -1,0 +1,4 @@
+# Global header integration is an alpha extension of two core layouts.
+chmod 700 /usr/local/opnsense/scripts/OPNsense/PenguSafe/*.py /usr/local/opnsense/scripts/OPNsense/PenguSafe/restore.php
+chmod 755 /usr/local/etc/rc.syshook.d/start/50-pengusafe
+/usr/local/opnsense/scripts/OPNsense/PenguSafe/header_integration.py install || exit 1

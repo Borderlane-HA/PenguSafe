@@ -1,0 +1,3 @@
+# Never remove the local recovery code while a protected session is active.
+/usr/local/opnsense/scripts/OPNsense/PenguSafe/pengusafe.py prepare-uninstall || exit 1
+/usr/local/opnsense/scripts/OPNsense/PenguSafe/header_integration.py remove || exit 1

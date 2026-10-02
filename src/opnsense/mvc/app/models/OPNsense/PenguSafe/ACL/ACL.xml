@@ -1,0 +1,9 @@
+<acl>
+    <page-user-pengusafe>
+        <name>System: PenguSafe</name>
+        <patterns>
+            <pattern>ui/pengusafe/*</pattern>
+            <pattern>api/pengusafe/*</pattern>
+        </patterns>
+    </page-user-pengusafe>
+</acl>

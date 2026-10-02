@@ -1,0 +1,9 @@
+PenguSafe adds a commit-confirmed style workflow to OPNsense.
+
+An administrator can arm a protected configuration session before making
+risky changes. PenguSafe stores a dedicated snapshot of /conf/config.xml and
+starts a local watchdog. If the session is not confirmed before the deadline,
+the snapshot is restored and the firewall reboots into the previous known
+configuration.
+
+No cloud service or browser connection is required for the rollback timer.

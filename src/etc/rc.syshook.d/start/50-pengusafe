@@ -1,0 +1,6 @@
+#!/bin/sh
+# Restore the header include after a core upgrade/reboot; recovery must run even
+# if an unsupported layout prevents header installation.
+/usr/local/opnsense/scripts/OPNsense/PenguSafe/header_integration.py install || logger -t pengusafe "Global header integration needs review"
+/usr/local/opnsense/scripts/OPNsense/PenguSafe/pengusafe.py resume || logger -t pengusafe "Watchdog resume failed; review session state"
+exit 0

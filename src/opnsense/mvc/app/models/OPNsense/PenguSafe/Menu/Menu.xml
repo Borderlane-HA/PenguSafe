@@ -1,0 +1,5 @@
+<menu>
+    <System>
+        <PenguSafe VisibleName="PenguSafe" cssClass="fa fa-shield fa-fw" url="/ui/pengusafe"/>
+    </System>
+</menu>
