@@ -81,20 +81,10 @@ cd PenguSafe-main
 sh tools/install-dev.sh
 ```
 
-### Install from the full ZIP
-
-Copy the extracted `PenguSafe` folder to `/root/PenguSafe` with SCP/WinSCP, then:
+### Plugin Status
 
 ```sh
-cd /root/PenguSafe
-sh tools/install-dev.sh
-```
-
-For either method, log out of the WebUI, log back in, and hard-refresh the page
-(Ctrl+F5). Open **System → PenguSafe**. The header badge should show **Idle**.
-Check backend access with:
-
-```sh
+cd /root/pengusafe-src/PenguSafe-main
 configctl pengusafe status
 ```
 
